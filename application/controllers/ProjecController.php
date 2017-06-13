@@ -11,6 +11,7 @@
  *
  * @author vien34
  */
-class ProjecController {
-    //put your code here
+class ProjecController extends CI_Controller {
+    
+    
 }
