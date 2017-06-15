@@ -11,6 +11,27 @@
  *
  * @author vien34
  */
-class ProjetModel {
-    //put your code here
+class ProjetModel extends CrudModel {
+    
+    
+    public function create() {
+        
+    }
+
+    public function delete() {
+        
+    }
+
+    public function get() {
+        
+    }
+
+    public function update() {
+        
+    }
+
+    public function getAll() {
+        
+    }
+
 }
