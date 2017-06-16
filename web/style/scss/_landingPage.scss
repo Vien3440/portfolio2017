@@ -8,3 +8,44 @@ and open the template in the editor.
     Author     : vien34
 */
 
+////////Header///////////
+
+#header {
+    
+    color: $yellow; 
+    text-align: center;
+    > #miniNav {
+        margin: 0px
+    }
+}
+/////////section About/////////
+
+
+.headerAbout{
+    background-color: $yellow;
+    color: $beige;
+    > h2{ // Title 
+        font-family:fonteTitel;
+        font-size: 50px;
+    }
+    
+}
+.bodyAbout{
+    background-color: $beige; 
+      
+
+}
+
+/////Cole in js /////
+
+////for fixed titel section ////
+
+.fixed {
+        position: fixed;
+        width: 50%;
+        bottom: 0px;
+}
+.scrollit {
+        float: right;
+        width:50%
+}

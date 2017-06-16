@@ -11,8 +11,13 @@ and open the template in the editor.
 
 /////////Typo //////////
 
-
-
+	
+@font-face {
+	font-family: "fonteTitel";
+	font-style: italic;
+	src:url('../font/Otterly.otf') format('truetype');
+        
+}
 /////////Colore //////////
 
 $yellow :#EEAB39;
@@ -20,3 +25,19 @@ $yellow :#EEAB39;
 $grey :#404141;
 
 $beige :#FBFED2;
+
+
+///////////All theme ///////////////////
+
+body{
+    background-color: $grey;
+    padding: 0px !important;
+    
+}
+.row {
+    margin: 0px;
+}
+.container-fluid{
+    padding-right: 0px;
+    padding-left: 0px;
+}

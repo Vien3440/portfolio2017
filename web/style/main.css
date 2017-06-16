@@ -16,6 +16,21 @@ and open the template in the editor.
     Created on : 14 juin 2017, 23:27:57
     Author     : vien34
 */
+@font-face {
+  font-family: "fonteTitel";
+  font-style: italic;
+  src: url("../font/Otterly.otf") format("truetype"); }
+body {
+  background-color: #404141;
+  padding: 0px !important; }
+
+.row {
+  margin: 0px; }
+
+.container-fluid {
+  padding-right: 0px;
+  padding-left: 0px; }
+
 /*
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
@@ -25,6 +40,31 @@ and open the template in the editor.
     Created on : 13 juin 2017, 21:40:33
     Author     : vien34
 */
+#header {
+  color: #EEAB39;
+  text-align: center; }
+  #header > #miniNav {
+    margin: 0px; }
+
+.headerAbout {
+  background-color: #EEAB39;
+  color: #FBFED2; }
+  .headerAbout > h2 {
+    font-family: fonteTitel;
+    font-size: 50px; }
+
+.bodyAbout {
+  background-color: #FBFED2; }
+
+.fixed {
+  position: fixed;
+  width: 50%;
+  bottom: 0px; }
+
+.scrollit {
+  float: right;
+  width: 50%; }
+
 /*
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
