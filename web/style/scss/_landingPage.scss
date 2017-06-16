@@ -32,8 +32,12 @@ and open the template in the editor.
 }
 .bodyAbout{
     background-color: $beige; 
-      
-
+         padding: 150px 60px 50px 90px; 
+         > .row > h4 {
+             font-family: fonteTitelAboutMe;
+             font-size: 40px;
+              letter-spacing : 2px;
+         }
 }
 
 /////Cole in js /////

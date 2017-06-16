@@ -16,11 +16,11 @@
         </div>
         <div  class="col-sm-6 bodyAbout" >
             <div class="row">
-                <div>Parcours</div>
+                <h4>Parcours</h4>
                 <p></p>
             </div>
             <div class="row">
-                <div>Experience</div>
+                <h4>Experience</h4>
                 <p>
                     <?php
                     foreach ($courses as $course) {
@@ -35,7 +35,7 @@
                 </p>
             </div>
             <div class="row">
-                <div>Skill</div>
+                <h4>Skill</h4>
                 <ul>
                     <?php
                     foreach ($skills as $skill) {
