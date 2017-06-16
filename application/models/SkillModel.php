@@ -7,11 +7,18 @@
  */
 
 /**
- * Description of ExtraModel
+ * Description of SkillModel
  *
  * @author vien34
  */
-class ExtraModel extends CI_Model{
+class SkillModel extends CI_Model {
+    
+    public function __construct() {
+        parent::__construct();
+        $this->load->database();
+    }
+
+
     //put your code here
     public function create() {
         
@@ -21,12 +28,20 @@ class ExtraModel extends CI_Model{
         
     }
 
-    public function getAll() {
+    public function get() {
         
+    }
+/**
+ * Retourne tout les skills de ma tbl
+ */
+    public function getAll() {
+        $query = $this->db->query("SELECT * FROM skill");
+        return $query->result_array();
     }
 
     public function update() {
         
     }
-
+   
+    
 }

@@ -11,7 +11,7 @@
  *
  * @author vien34
  */
-class WorkModel extends CrudModel{
+class WorkModel extends CI_Model{
     //put your code here
     
     public function create() {

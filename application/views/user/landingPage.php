@@ -21,11 +21,32 @@
             </div>
             <div class="row">
                 <div>Experience</div>
-                <p></p>
+                <p>
+                    <?php
+                    foreach ($courses as $course) {
+                        ?>  
+                <h3></h3>      
+                        <p>
+                            <?php echo $course["detail"]; ?>
+                        </p>
+                        <?php
+                    }
+                    ?>
+                </p>
             </div>
             <div class="row">
                 <div>Skill</div>
-                <p></p>
+                <ul>
+                    <?php
+                    foreach ($skills as $skill) {
+                    ?>        
+                        <li>
+                            <?php echo $skill["name"]; ?>
+                        </li>
+                        <?php
+                    }
+                    ?>
+                </ul>
             </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a viverra mi. Praesent suscipit varius felis sed viverra. Aenean auctor malesuada commodo. Quisque vel egestas tellus. Morbi in auctor erat, non consequat arcu. Etiam quis rutrum enim. In rhoncus mi in faucibus venenatis. Morbi tincidunt fermentum ornare. Etiam tincidunt condimentum massa sit amet posuere.
 

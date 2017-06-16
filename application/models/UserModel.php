@@ -11,6 +11,21 @@
  *
  * @author vien34
  */
-class UserModel {
-    //put your code here
+class UserModel extends CI_Model {
+    
+    public function create() {
+        
+    }
+
+    public function delete() {
+        
+    }
+
+    public function getAll() {
+        
+    }
+
+    public function update() {
+        
+    }
 }

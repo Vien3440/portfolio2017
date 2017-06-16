@@ -11,8 +11,12 @@
  *
  * @author vien34
  */
-class CourseModel extends CrudModel {
+class CourseModel extends CI_Model {
     
+    public function __construct() {
+        parent::__construct();
+        $this->load->database();
+    }
     //put your code here
     public function create() {
         
@@ -23,7 +27,8 @@ class CourseModel extends CrudModel {
     }
 
     public function getAll() {
-        
+        $query = $this->db->query("SELECT * FROM experience");
+        return $query->result_array();
     }
 
     public function update() {

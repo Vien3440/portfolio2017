@@ -11,7 +11,7 @@
  *
  * @author vien34
  */
-class ProjetModel extends CrudModel {
+class ProjetModel extends CI_Model {
     
     
     public function create() {
