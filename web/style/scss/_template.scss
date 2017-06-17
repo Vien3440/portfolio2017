@@ -12,17 +12,36 @@ and open the template in the editor.
 /////////Typo //////////
 
 	
+
+
 @font-face {
-	font-family: "fonteTitel";
-	
-	src:url('../font/Otterly.otf') format('truetype');
-        
-}
-@font-face {
-	font-family: "fonteTitelAboutMe";
+	font-family: "typoH1";
 	src:url('../font/ralewase/Raleway-Black.ttf') ;
         
 }
+@font-face {
+	font-family: "typoH2";
+	src:url('../font/ralewase/Raleway-ExtraBold.ttf') ;
+        
+}
+@font-face {
+	font-family: "typoH3";
+	src:url('../font/ralewase/Raleway-Bold.ttf') ;
+        
+}
+@font-face {
+	font-family: "typoH4";
+	src:url('../font/ralewase/Raleway-SemiBold.ttf') ;
+        
+}
+
+
+@font-face {
+	font-family: "typoText";
+	src:url('../font/ralewase/Raleway-Light.ttf') ;
+        
+}
+
 /////////Colore //////////
 
 $yellow :#EEAB39;
@@ -33,6 +52,28 @@ $beige :#FBFED2;
 
 
 ///////////All theme ///////////////////
+
+.tipoH1{
+    font-family: "typoH1";
+}
+
+.tipoH2{
+    font-family: "typoH2";
+}
+
+.tipoH3{
+    font-family: "typoH3";
+}
+
+.tipoH4{
+    font-family: "typoH4";
+}
+
+.tipoText{
+     font-family: "typoText";
+     font-size: 18px!important;
+        
+}
 
 body{
     background-color: $grey;
@@ -46,3 +87,4 @@ body{
     padding-right: 0px;
     padding-left: 0px;
 }
+
