@@ -68,8 +68,12 @@ and open the template in the editor.
   width: 50%;
   bottom: 0px; }
 
-.scrollit {
+.scrollitR {
   float: right;
+  width: 50%; }
+
+.scrollitL {
+  float: left;
   width: 50%; }
 
 /*

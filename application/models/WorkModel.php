@@ -23,7 +23,8 @@ class WorkModel extends CI_Model{
     }
 
     public function getAll() {
-        
+        $query = $this->db->query("SELECT * FROM experience");
+        return $query->result_array();
     }
 
     public function update() {

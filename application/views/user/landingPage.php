@@ -10,11 +10,84 @@
 
         <h4 id="miniNav">A propos/Project/Contact</h4>
     </header>
-    <section class="sectionAbout container-fluid fixed-left">
+    <section class="sectionAbout container-fluid ">
         <div class="headerAbout col-sm-6 ">
-            <h2 class="titelCenter text-center">A propos de moi</h2>
+            <h2 class="titelCenterAbout text-center">A propos de moi</h2>
         </div>
         <div  class="col-sm-6 bodyAbout" >
+            <div class="row">
+                 <h3>     
+                    <?php foreach ($abouts as $about) {  ?> 
+                       <h3>     
+                        <?php echo $about["text"]?>
+                    </h3>  
+                     <?php } ?>
+                 </h3> 
+            </div>
+            <div class="row">
+                <h4>Parcours</h4>
+                <p>
+                    <?php foreach ($courses as $course) {  ?>  
+                    <h3>     
+                        <?php echo $course["title_qualification"]?>
+                    </h3> 
+                    <p>
+                        <?php  echo $course["date"].' / '.$course["establishment"]?>
+                    </p>
+                    <p>
+                        <?php  echo $course["description_formation"]?>
+                    </p>
+                    <?php } ?>
+                </p>
+            </div>
+            <div class="row">
+                <?php if ( empty($work) == FALSE  ) {  ?>  
+                <h4>Experience</h4>
+                <p>
+                   <?php foreach ($courses as $course) {  ?>  
+                    <h3>     
+                        <?php echo $course["title_qualification"]?>
+                    </h3> 
+                    <p>
+                        <?php  echo $course["date"].' / '.$course["establishment"]?>
+                    </p>
+                    <p>
+                        <?php  echo $course["description_formation"]?>
+                    </p>
+                    
+                       
+                       <p>D'une nature créative, à l'écoute de vos besoins, je sais mettre en œuvre un projet web de l'idée (Mokup) à la version de déploiement suivant vos attentes, tout en mettant en avant une expérience utilisateur innovante, réfléchie. N'hésitez pas à visionner mes projets et à me contacter .</p>
+                  
+                    <?php
+                    }
+                    }else {
+                    ?>
+                       
+                       <p>D'une nature créative, à l'écoute de vos besoins, je sais mettre en œuvre un projet web de l'idée (Mokup) à la version de déploiement suivant vos attentes, tout en mettant en avant une expérience utilisateur innovante, réfléchie. N'hésitez pas à visionner mes projets et à me contacter .</p>
+                           <?php
+                    }
+                    ?>
+
+                </p>
+            </div>
+            <div class="row">
+                <h4>Skill</h4>
+                <ul>
+                    <?php
+                    foreach ($skills as $skill) {
+                    ?>        
+                        <li>
+                            <?php echo $skill["name"]; ?>
+                        </li>
+                        <?php
+                    }
+                    ?>
+                </ul>
+            </div>
+              </div>
+    </section>
+     <section class="sectionProjet container-fluid ">
+        <div  class="col-sm-6 bodyProjet" >
             <div class="row">
                 <h4>Parcours</h4>
                 <p></p>
@@ -67,6 +140,9 @@
                 Duis ut nibh et lorem placerat consectetur at sed mi. Nullam fermentum iaculis ligula, nec facilisis felis venenatis molestie. Nullam id sem rutrum nisl dignissim elementum. Vivamus eu dolor quis lectus gravida feugiat. Aliquam accumsan dolor in elit porta, a faucibus tortor cursus. Nullam lacinia a eros ut aliquam. Suspendisse aliquam libero nunc, sit amet dignissim orci efficitur non. Nunc orci nibh, consectetur laoreet est eu, cursus hendrerit tortor.
 
                 Nulla convallis nunc viverra risus consequat vestibulum. Nulla felis justo, dapibus quis lacus sit amet, luctus rhoncus turpis. Duis scelerisque massa sed augue pellentesque, et ornare lectus commodo. Nullam porttitor justo sed porta tincidunt. Phasellus in pretium eros, non congue augue. Pellentesque finibus mauris ut est feugiat fermentum. Sed ac tempus mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur volutpat urna lorem, nec egestas erat ultrices aliquam. Mauris ullamcorper ante urna, eu vestibulum turpis vehicula vel. Cras sodales mattis ante, quis pellentesque urna imperdiet molestie. Nunc sodales quam justo, et fringilla tellus porttitor ut. Sed euismod convallis massa ac maximus. Vivamus enim massa, cursus a laoreet ac, rhoncus at nunc. Praesent metus quam, ultrices id mauris ut, lobortis tristique erat.</p>
+        </div>
+          <div class="headerProjet col-sm-6 ">
+            <h2 class="titelCenterProjet text-center">A propos de moi</h2>
         </div>
     </section>
 </body>

@@ -7,11 +7,11 @@
  */
 
 /**
- * Description of CourseModel
+ * Description of AboutModel
  *
  * @author vien34
  */
-class CourseModel extends CI_Model {
+class AboutModel extends CI_Model {
     
     public function __construct() {
         parent::__construct();
@@ -27,7 +27,7 @@ class CourseModel extends CI_Model {
     }
 
     public function getAll() {
-        $query = $this->db->query("SELECT * FROM formation");
+        $query = $this->db->query("SELECT * FROM about");
         return $query->result_array();
     }
 
@@ -36,3 +36,4 @@ class CourseModel extends CI_Model {
     }
 
 }
+
