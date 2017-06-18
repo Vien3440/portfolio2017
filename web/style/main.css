@@ -45,14 +45,16 @@ and open the template in the editor.
 
 .tipoText {
   font-family: "typoText";
-  font-size: 18px !important; }
+  font-size: 18px !important;
+  text-align: justify; }
 
 body {
-  background-color: #404141;
+  background-color: #453D3F;
   padding: 0px !important; }
 
 .row {
-  margin: 0px; }
+  margin: 0px;
+  margin-bottom: 50px; }
 
 .container-fluid {
   padding-right: 0px;
@@ -75,24 +77,38 @@ and open the template in the editor.
 
 .headerAbout {
   background-color: #EEAB39;
-  color: #FBFED2; }
+  color: #EADBC4; }
   .headerAbout > h2 {
     font-size: 50px; }
 
 .bodyAbout {
-  background-color: #FBFED2;
+  color: #5b4421;
+  background-color: #EADBC4;
   padding: 150px 60px 50px 90px; }
-  .bodyAbout > .row {
-    margin-bottom: 50px; }
-    .bodyAbout > .row > h4 {
-      font-size: 45px;
-      letter-spacing: 2px; }
+  .bodyAbout > .row > h4 {
+    font-size: 45px;
+    letter-spacing: 2px; }
 
 .marginSectionAbout {
-  border-left: 5px solid #404141;
+  border-left: 5px solid #EEAB39;
   padding: 10px;
   padding-left: 20px;
   margin-top: 50px; }
+
+.skills {
+  list-style: none;
+  margin: 20px; }
+
+@media screen and (min-width: 768px) {
+  .skills {
+    padding: 0; } }
+.sb_progress {
+  background-color: #eccb96 !important;
+  border: 1px solid #EEAB39; }
+
+.sb_bar {
+  background-color: #EEAB39 !important;
+  color: inherit !important; }
 
 .fixed {
   position: fixed;

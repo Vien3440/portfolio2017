@@ -1,18 +1,35 @@
 $(document).ready(function () {
-//// Col md bootstrap
-    if ($('header').width() >= 768) {
+
+    
+   $('.skill').simpleSkillbar();   
+    
         sectionAbout();
         sectionProject();
-    };
+  
     
-    $(window).resize(function () {
-//// Col md bootstrap
-        if ($('header').width() >= 768) {
-            sectionAbout();
-            sectionProject();
-        };
-    });
+   
 
+
+});
+ $(window).resize(function () {
+
+       $('.skill').simpleSkillbar();   
+    
+        sectionAbout();
+        sectionProject();
+  
+  
+     
+    });
+    $(window).change(function () {
+   $('.skill').simpleSkillbar();   
+    
+        sectionAbout();
+        sectionProject();
+  
+    
+     
+    });
 
     function sectionAbout() {
 
@@ -50,6 +67,10 @@ $(document).ready(function () {
         });
 //     vertical center titel
         $($titelSectionBlock).css("left", ($($blockFix).width() / 2) - ($($titelSectionBlock).width() / 2) + "px");
+
+  if ($('header').width() >= 1200) {
+      
+
 
 
 //    block titel bottom 
@@ -92,4 +113,22 @@ $(document).ready(function () {
             }
         });
     }; 
-});
+    }; 
+
+//
+//function skill (){
+//    
+//    $('#skill').simpleSkillbar({
+//
+//  // or data-height='30'
+//  height: 30,
+//
+//  // or data-text-color='#fff'
+//  text-color: '#fff',
+//
+//  // or data-text-background='#337ab7'
+//  text-background: '#337ab7',
+//
+//});
+//
+//}

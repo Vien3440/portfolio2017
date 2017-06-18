@@ -46,9 +46,9 @@ and open the template in the editor.
 
 $yellow :#EEAB39;
 
-$grey :#404141;
+$grey :#453D3F;
 
-$beige :#FBFED2;
+$beige :#EADBC4;
 
 
 ///////////All theme ///////////////////
@@ -72,7 +72,7 @@ $beige :#FBFED2;
 .tipoText{
      font-family: "typoText";
      font-size: 18px!important;
-        
+     text-align :justify; 
 }
 
 body{
@@ -82,7 +82,11 @@ body{
 }
 .row {
     margin: 0px;
+    margin-bottom: 50px;
 }
+
+
+
 .container-fluid{
     padding-right: 0px;
     padding-left: 0px;
