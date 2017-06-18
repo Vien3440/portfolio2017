@@ -45,7 +45,7 @@ $(window).change(function () {
 
     function section($blockFix, $blockText, $scrollit, $multipleW, $titelSectionBlock, $widthBloc) {
 
-// whidth block header
+// width block header
         $($blockFix).css("height", window.innerHeight);
 
 //     horizontal center titel
@@ -102,21 +102,3 @@ $(window).change(function () {
         });
     }; 
     }; 
-
-//
-//function skill (){
-//    
-//    $('#skill').simpleSkillbar({
-//
-//  // or data-height='30'
-//  height: 30,
-//
-//  // or data-text-color='#fff'
-//  text-color: '#fff',
-//
-//  // or data-text-background='#337ab7'
-//  text-background: '#337ab7',
-//
-//});
-//
-//}

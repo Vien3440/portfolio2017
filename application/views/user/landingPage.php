@@ -3,7 +3,7 @@
 <body>
     <header id="header">
         <p> DEVELOPPEUR WEB JUNIORS </p>
-        
+
         <div class="container-fluid">
             <img  class="col-xs-1 img-responsive" src="<?php echo base_url(); ?>web/imgSource/logoHeader.png">
             <h1  class="col-xs-12">Kimbidima Vivien</h1>
@@ -19,7 +19,7 @@
             <div class="row">
 
                 <?php foreach ($abouts as $about) { ?> 
-                <h3 class="tipoText">     
+                    <h3 class="tipoText">     
                         <?php echo $about["text"] ?>
                     </h3>  
                 <?php } ?>
@@ -29,24 +29,6 @@
                 <h4 class="tipoH2">Parcours</h4>
                 <div class="marginSectionAbout">
                     <?php foreach ($courses as $course) { ?>  
-                    <h3>     
-                        <?php echo $course["title_qualification"] ?>
-                    </h3> 
-                    <p>
-                        <?php echo $course["date"] . ' / ' . $course["establishment"] ?>
-                    </p>
-                    <p>
-                        <?php echo $course["description_formation"] ?>
-                    </p>
-                <?php } ?>
-                </p>
-            </div>
-            </div>
-            <div class="row">
-                <?php if (empty($work) == FALSE) { ?>  
-                    <h4 class="tipoH2" >Experience</h4>
-                    <div>
-                        <?php foreach ($courses as $course) { ?>  
                         <h3>     
                             <?php echo $course["title_qualification"] ?>
                         </h3> 
@@ -56,49 +38,79 @@
                         <p>
                             <?php echo $course["description_formation"] ?>
                         </p>
-
-
-                        <p class="tipoText">D'une nature créative, à l'écoute de vos besoins, je sais mettre en œuvre un projet web de l'idée (Mokup) à la version de déploiement suivant vos attentes, tout en mettant en avant une expérience utilisateur innovante, réfléchie. N'hésitez pas à visionner mes projets et à me contacter .</p>
-
-                        <?php
-                    }
-                } else {
-                    ?>
-
-                        <p class="tipoText">D'une nature créative, à l'écoute de vos besoins, je sais mettre en œuvre un projet web de l'idée (Mokup) à la version de déploiement suivant vos attentes, tout en mettant en avant une expérience utilisateur innovante, réfléchie. N'hésitez pas à visionner mes projets et à me contacter .</p>
-                    <?php
-                }
-                ?>
-
-               
+                    <?php } ?>
+                    </p>
+                </div>
             </div>
             <div class="row">
-                <h4 class="tipoH2" >Skill</h4>
-                <ul>
-                    
-                    
-                    
-                 
-                    <?php
-                    foreach ($skills as $skill) {
-                        ?>        
-                        
-                    <li class="skills">
-                            <div class="skill" data-width="<?php echo $skill["percentage"]; ?>"><?php echo $skill["name"]; ?></div>
-                    </li>  
+                <?php if (empty($work) == FALSE) { ?>  
+                    <h4 class="tipoH2" >Experience</h4>
+                    <div>
+                        <?php foreach ($courses as $course) { ?>  
+                            <h3>     
+                                <?php echo $course["title_qualification"] ?>
+                            </h3> 
+                            <p>
+                                <?php echo $course["date"] . ' / ' . $course["establishment"] ?>
+                            </p>
+                            <p>
+                                <?php echo $course["description_formation"] ?>
+                            </p>
+
+
+                            <p class="tipoText">D'une nature créative, à l'écoute de vos besoins, je sais mettre en œuvre un projet web de l'idée (Mokup) à la version de déploiement suivant vos attentes, tout en mettant en avant une expérience utilisateur innovante, réfléchie. N'hésitez pas à visionner mes projets et à me contacter .</p>
+
+                            <?php
+                        }
+                    } else {
+                        ?>
+
+                        <p class="tipoText">D'une nature créative, à l'écoute de vos besoins, je sais mettre en œuvre un projet web de l'idée (Mokup) à la version de déploiement suivant vos attentes, tout en mettant en avant une expérience utilisateur innovante, réfléchie. N'hésitez pas à visionner mes projets et à me contacter .</p>
                         <?php
                     }
                     ?>
-                </ul>
+
+
+                </div>
+                <div class="row">
+                    <h4 class="tipoH2" >Skill</h4>
+                    <ul>
+
+
+
+
+                        <?php
+                        foreach ($skills as $skill) {
+                            ?>        
+
+                            <li class="skills">
+                                <div class="skill" data-width="<?php echo $skill["percentage"]; ?>"><?php echo $skill["name"]; ?></div>
+                            </li>  
+                            <?php
+                        }
+                        ?>
+                    </ul>
+                </div>
             </div>
-        </div>
     </section>
     <section class="sectionProjet container-fluid ">
         <div class="headerProjet col-lg-6 ">
             <h2 class=" tipoH2 titelCenterProjet text-center">Projets</h2>
         </div>
-        <div  class="col-lg-6 bodyProjet" >
-            
+        <div  class="col-lg-6 bodyProjet " id="projetJs" >
+            <?php foreach ($projets as $projet) { ?> 
+            <a id="projetThumb<?php echo $projet["id"] ?>" href="#projetThumb<?php echo $projet["id"]?>">
+                <div class="projetThumb js-scrollTo" style= "
+                     background-image:url('<?php echo base_url(); ?>web/imgSource/projet/<?php echo $projet["thumbnail_img"] ?>');">
+                     <h3 class="tipoText">     
+                     <?php echo $projet["thumbnail_texte"] ?>
+                        
+                     </h3>  
+
+                </div>  
+                 </a>
+            <?php } ?>
+
         </div>
-        
+
     </section>

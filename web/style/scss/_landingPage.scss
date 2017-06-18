@@ -71,11 +71,30 @@ and open the template in the editor.
 
 .headerProjet{
     background-color: $beige;
+              transition-duration: .5s;
+
     > h2 {
         color: $textForBeige;
     }
 }
 
+
+
+.projetThumb{
+    background-size :cover;
+    background-position: center; 
+    padding: 0  !important;
+    transition-duration: .50s;
+    
+}.projetThumb:hover{
+    
+   transition-duration: .2s;
+background-image: !important; 
+}
+
+.bodyProjet{
+    padding: 0px;
+}
 
 /////Cole in js /////
 
@@ -95,3 +114,31 @@ and open the template in the editor.
     float: left;
     width:50%
 }
+/////Projet
+
+.projetOn{
+
+    > .headerProjet {
+          transition-duration: .5s;
+     width: 200px;
+     z-index : 50;
+     > .titelCenterProjet{
+         top: 0px !important;
+         left: 0px !important;
+     }
+    }
+    > .bodyProjet{
+        transition-duration: .4s;
+        transition-delay:  .2s;
+        position:absolute;
+        width: 100%;
+    }
+   
+   
+}
+
+.selectProjetOn{
+   height: 350px !important;
+}
+
+

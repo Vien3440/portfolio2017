@@ -4,6 +4,7 @@
         <script   src="<?php echo base_url();?>web/vendore/simple-skillbar.js"></script>
         <script   src="<?php echo base_url();?>web/js/landingPageJs/header.js"></script>
         <script   src="<?php echo base_url();?>web/js/landingPageJs/section.js"></script>
+        <script   src="<?php echo base_url();?>web/js/landingPageJs/project.js"></script>
     </body>
 </html>
 

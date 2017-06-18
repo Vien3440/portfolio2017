@@ -11,6 +11,7 @@ class ViewsController extends CI_Controller {
         $this->load->model('SkillModel','skillsM');
         $this->load->model('CourseModel','courM');
         $this->load->model('WorkModel','workM');
+        $this->load->model('ProjetModel','projM');
     }
 
     /**
@@ -24,7 +25,8 @@ class ViewsController extends CI_Controller {
             "abouts" => $this->aboutM->getAll(),
             "skills" => $this->skillsM->getAll(),
             "courses" => $this->courM->getAll(),
-            "works" => $this->workM->getAll()
+            "works" => $this->workM->getAll(),
+            "projets" => $this->projM->getAll(),
             
         ));
         $this->load->view('user/userTemplate/footer');
