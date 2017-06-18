@@ -1,34 +1,22 @@
 $(document).ready(function () {
-
+    //// Init Skillbar ///
+    $('.skill').simpleSkillbar();  
     
-   $('.skill').simpleSkillbar();   
-    
+     //// Init section ///
         sectionAbout();
         sectionProject();
-  
-    
-   
-
-
 });
- $(window).resize(function () {
 
-       $('.skill').simpleSkillbar();   
-    
+ $(window).resize(function () {
+    $('.skill').simpleSkillbar();   
         sectionAbout();
-        sectionProject();
-  
-  
-     
+        sectionProject();    
     });
-    $(window).change(function () {
-   $('.skill').simpleSkillbar();   
     
+$(window).change(function () {
+    $('.skill').simpleSkillbar();   
         sectionAbout();
         sectionProject();
-  
-    
-     
     });
 
     function sectionAbout() {
@@ -47,7 +35,7 @@ $(document).ready(function () {
 
         var blockFixProjet = $(".headerProjet");
         var blockTextProjet = $('.bodyProjet');
-        var scrollitProjet = "scrollitL";
+        var scrollitProjet = "scrollitR";
         var multipleWProjet = window.innerHeight + $('.bodyAbout').innerHeight();
         var titelSectionBlockProjet = ".titelCenterProjet";
 

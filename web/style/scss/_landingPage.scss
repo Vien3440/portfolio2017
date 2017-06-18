@@ -11,13 +11,13 @@ and open the template in the editor.
 ////////Header///////////
 
 #header {
-
     color: $yellow; 
     text-align: center;
     > #miniNav {
         margin: 0px
     }
 }
+
 /////////section About/////////
 
 
@@ -25,26 +25,16 @@ and open the template in the editor.
 .headerAbout{
     background-color: $yellow;
     color: $beige;
-    > h2{ // Title 
-
-          font-size: 50px;
-    }
-
 }
 .bodyAbout{
-
-    color: #5b4421;
+    color: $textForBeige;
     background-color: $beige; 
     padding: 150px 60px 50px 90px; 
-    > .row {
-        > h4{
-            font-size: 45px;
-            letter-spacing : 2px;
-        }
-
+    > .row > h4{
+        font-size: 45px;
+        letter-spacing : 2px;
     }
 }
-
 
 .marginSectionAbout{
     border-left: 5px solid $yellow; 
@@ -62,7 +52,7 @@ and open the template in the editor.
 }
 
 @media screen and (min-width: 768px) {
-.skills {padding: 0}
+    .skills {padding: 0}
 }
 .sb_progress{
     background-color : rgb(236, 203, 150) !important;
@@ -76,6 +66,15 @@ and open the template in the editor.
 
 }
 
+
+/////////section Project/////////
+
+.headerProjet{
+    background-color: $beige;
+    > h2 {
+        color: $textForBeige;
+    }
+}
 
 
 /////Cole in js /////

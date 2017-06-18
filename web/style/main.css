@@ -35,7 +35,8 @@ and open the template in the editor.
   font-family: "typoH1"; }
 
 .tipoH2 {
-  font-family: "typoH2"; }
+  font-family: "typoH2";
+  font-size: 50px; }
 
 .tipoH3 {
   font-family: "typoH3"; }
@@ -78,8 +79,6 @@ and open the template in the editor.
 .headerAbout {
   background-color: #EEAB39;
   color: #EADBC4; }
-  .headerAbout > h2 {
-    font-size: 50px; }
 
 .bodyAbout {
   color: #5b4421;
@@ -109,6 +108,11 @@ and open the template in the editor.
 .sb_bar {
   background-color: #EEAB39 !important;
   color: inherit !important; }
+
+.headerProjet {
+  background-color: #EADBC4; }
+  .headerProjet > h2 {
+    color: #5b4421; }
 
 .fixed {
   position: fixed;
