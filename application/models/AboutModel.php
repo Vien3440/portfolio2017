@@ -12,14 +12,18 @@
  * @author vien34
  */
 class AboutModel extends CI_Model {
-    
+
     public function __construct() {
         parent::__construct();
         $this->load->database();
     }
+
     //put your code here
-    public function create() {
+    public function create($data) {
+
         
+
+        return $this->db->insert('about', $data);
     }
 
     public function delete() {
@@ -36,4 +40,3 @@ class AboutModel extends CI_Model {
     }
 
 }
-

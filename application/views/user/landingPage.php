@@ -102,15 +102,33 @@
             <a id="projetThumb<?php echo $projet["id"] ?>" href="#projetThumb<?php echo $projet["id"]?>">
                 <div class="projetThumb js-scrollTo" style= "
                      background-image:url('<?php echo base_url(); ?>web/imgSource/projet/<?php echo $projet["thumbnail_img"] ?>');">
-                     <h3 class="tipoText">     
-                     <?php echo $projet["thumbnail_texte"] ?>
+<!--                     <h3 class="tipoText">     
+                     <?php // echo $projet["thumbnail_texte"] ?>
                         
-                     </h3>  
+                     </h3>  -->
 
-                </div>  
+                </div> 
+                <div class="detailOff detail" >
+                <p><?php echo $projet["detail_texte"] ?></p>
+                <p><?php echo $projet["detail_img"] ?></p>
+                <p><?php echo $projet["date"] ?></p>
+                <p><?php echo $projet["link"] ?></p>
+            </div>
                  </a>
             <?php } ?>
-
+            
         </div>
 
+    </section>
+    
+    <section class="sectionEnd container-fluid ">
+        <div class="header col-lg-6 ">
+            <h2 class=" tipoH2  text-center">Contact </h2>
+            <p>D'une nature créative, à l'écoute de vos besoins, je sais mettre en œuvre un projet web de l'idée (Mokup) à la version de déploiement suivant vos attentes, tout en mettant en avant une expérience utilisateur innovante, réfléchie. N'hésitez pas à visionner mes projets et à me contacter .</p>
+        </div>
+         <div class="header col-lg-6 ">
+            <h2 class=" tipoH2  text-center">Contact </h2>
+                        <p>D'une nature créative, à l'écoute de vos besoins, je sais mettre en œuvre un projet web de l'idée (Mokup) à la version de déploiement suivant vos attentes, tout en mettant en avant une expérience utilisateur innovante, réfléchie. N'hésitez pas à visionner mes projets et à me contacter .</p>
+
+        </div>
     </section>

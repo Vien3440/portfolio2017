@@ -26,7 +26,7 @@ $(window).change(function () {
         var scrollitAbout = "scrollitR";
         var multipleWAbout = window.innerHeight;
         var titelSectionBlockAbout = ".titelCenterAbout";
-        var widthBloc = blockTextAbout.innerHeight();
+        var widthBloc = blockTextAbout.innerHeight(); 
 
         section(blockFixAbout, blockTextAbout, scrollitAbout, multipleWAbout, titelSectionBlockAbout, widthBloc);
     }
@@ -82,7 +82,7 @@ $(window).change(function () {
                 $($blockText).addClass($scrollit);
 
 
-//    unblock titel top   
+
 
                 if ($(window).scrollTop() > $widthBloc) {
                     $($blockFix).removeClass('fixed');
@@ -90,7 +90,7 @@ $(window).change(function () {
                     $($blockFix).css({
                         top: $widthBloc - window.innerHeight
                     });
-//    unblock titel top   
+ 
                 } else {
                     $($blockFix).addClass('fixed');
                     $($blockText).addClass($scrollit);

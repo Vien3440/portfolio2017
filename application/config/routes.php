@@ -56,4 +56,17 @@ $route['translate_uri_dashes'] = FALSE;
 /*--------User route ----------*/
 $route['default_controller'] = 'viewsController';
 
+
 /*--------Admin route ----------*/
+
+/*Home Admin*/
+$route['admin'] = 'adminController';
+/*-Management About -*/
+$route['admin/get/abouts'] = 'adminController/getAbouts/';
+/*add*/
+$route['admin/add/about'] = 'adminController/addAbout/';
+
+/*-Management Experience -*/
+/*-Management Fromation -*/
+/*-Management Project -*/
+/*-Management Skill -*/

@@ -78,8 +78,6 @@ and open the template in the editor.
     }
 }
 
-
-
 .projetThumb{
     background-size :cover;
     background-position: center; 
@@ -94,6 +92,25 @@ background-image: !important;
 
 .bodyProjet{
     padding: 0px;
+}
+
+.detail{
+    
+     background-color: $yellow;
+        position: relative;
+        
+        padding-left: 200px;
+}
+
+.detailOff{
+    display: none;
+   
+}
+
+.detailOn{
+    display: block;
+            transition-duration: .4s;
+        transition-delay:  .2s;
 }
 
 /////Cole in js /////
