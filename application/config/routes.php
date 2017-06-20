@@ -53,6 +53,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
+/*--------Login route ----------*/
+$route['login'] = 'loginController/getFormLogin';
+
 /*--------User route ----------*/
 $route['default_controller'] = 'viewsController';
 

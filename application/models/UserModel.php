@@ -13,19 +13,31 @@
  */
 class UserModel extends CI_Model {
     
-    public function create() {
+     public function __construct() {
+        parent::__construct();
+        $this->load->database();
+        $this->load->library('session');
         
     }
-
-    public function delete() {
+    
+    function getUserValide($data){
         
-    }
-
-    public function getAll() {
+          $ref = [
+            'email' => "vivi",
+            'mdp' => 123
+        ];
         
-    }
-
-    public function update() {
+        if ($data['email'] == $ref['email'] && $data['mdp'] == $ref['mdp'] ){
+              
+              $this->session->unset_userdata('some_name');
+              $this->session->set_userdata($ref);
+              
+              redirect('/admin');
+          }
         
+          
+          
     }
+    
+    
 }
