@@ -26,21 +26,23 @@
 
                 <div class="tab-content">
                     <div class="tab-pane active" id="tab_1">
-
+                        <!--Create form-->
                         <?php
-                        
+                        //loading form_validation 
                         $this->load->library('form_validation');
-                        //chargement du helper form
+                        //loading helper form
                         $this->load->helper('form');
 
                         echo form_open('admin/add/about');
-
+                        
+                       
                         $data = array(
                             'text' => 'text',
                             'placeholder' => 'Text',
                             'value' => set_value('text'),
                             'name' => 'text',
                         );
+                        
                         
                         echo form_textarea($data);
 
@@ -83,7 +85,8 @@
                         <!-- /.tab-pane -->
                     </div>
                     <button class=" btn btn-primary btn-flat">Modifier</button>
-                    <button class="btn btn-danger btn-flat">Suprimer</button>
+                    <?php $newstitle =  $about["id"]; ?> 
+                    <a href="<?php echo base_url()."admin/remove/about/".$newstitle;?>"><input class="btn btn-danger btn-flat" type="submit"  src="" value="Suprimer"></a>
                     <!-- /.tab-content -->
                 </div>
                 <!-- nav-tabs-custom -->

@@ -20,14 +20,13 @@ class AboutModel extends CI_Model {
 
     //put your code here
     public function create($data) {
-
         
-
         return $this->db->insert('about', $data);
     }
 
-    public function delete() {
-        
+    public function delete($id) {
+        $this->db->where('id',$id);
+        return $this->db->delete('about');
     }
 
     public function getAll() {

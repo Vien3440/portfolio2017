@@ -33,13 +33,7 @@ class AdminController extends CI_Controller {
 
         $this->load->view('admin/template_admin/head');
         $this->load->view('admin/template_admin/nav');
-        $this->load->view('admin/home_admin', array(
-//            "abouts" => $this->aboutM->getAll(),
-//            "skills" => $this->skillsM->getAll(),
-//            "courses" => $this->courM->getAll(),
-//            "works" => $this->workM->getAll(),
-//            "projets" => $this->projM->getAll(),
-        ));
+        $this->load->view('admin/home_admin');
         $this->load->view('admin/template_admin/footer');
     }
 
@@ -47,7 +41,8 @@ class AdminController extends CI_Controller {
         $this->load->view('admin/template_admin/head');
         $this->load->view('admin/template_admin/nav');
         $this->load->view('admin/about/homeAbout_admin', array(
-            "abouts" => $this->aboutM->getAll()
+            "abouts" => $this->aboutM->getAll(),
+            
         ));
         $this->load->view('admin/template_admin/footer');
     }
@@ -57,24 +52,22 @@ class AdminController extends CI_Controller {
         $this->load->library('form_validation');
         //chargement du helper form
         $this->load->helper('form');
-
         
-        
+        //create Obj about
         $data = [
             'text' => $this->input->post('text')
         ];
-        
-  
-         $this->aboutM->create($data);
-       
-        
-        $this->load->view('admin/template_admin/head');
-        $this->load->view('admin/template_admin/nav');
-        $this->load->view('admin/about/homeAbout_admin', array(
-            "abouts" => $this->aboutM->getAll()
-        ));
-        $this->load->view('admin/template_admin/footer');
+        $this->aboutM->create($data);
+       /// Return on view homeAbout
+        $this->getAbouts();
      
+        
+    }
+    
+     public function removeAbout($int) {
+
+        $this->aboutM->delete($int);
+        $this->getAbouts();
     }
 
 }

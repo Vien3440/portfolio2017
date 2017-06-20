@@ -65,7 +65,8 @@ $route['admin'] = 'adminController';
 $route['admin/get/abouts'] = 'adminController/getAbouts/';
 /*add*/
 $route['admin/add/about'] = 'adminController/addAbout/';
-
+/*remove*/
+$route['admin/remove/about/(:num)'] = 'adminController/removeAbout/$1';
 /*-Management Experience -*/
 /*-Management Fromation -*/
 /*-Management Project -*/

@@ -60,7 +60,7 @@
       <ul class="sidebar-menu">
         <li class="header">HEADER</li>
         <!-- Optionally, you can add icons to the links -->
-        <li><a href="#"><i class="fa fa-link"></i> <span>Gestion Phrase d'intro</span></a></li>
+        <li><a href="<?php echo base_url();?>admin/get/abouts"><i class="fa fa-link"></i> <span>Gestion Phrase d'intro</span></a></li>
         <li><a href="#"><i class="fa fa-link"></i> <span>Gestion Formation</span></a></li>
         <li><a href="#"><i class="fa fa-link"></i> <span>Gestion D'experience</span></a></li>
         <li><a href="#"><i class="fa fa-link"></i> <span>Gestion Projet</span></a></li>
